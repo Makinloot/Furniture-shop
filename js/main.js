@@ -2,9 +2,11 @@
 import "https://unpkg.com/swiper@8/swiper-bundle.min.js";
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 2.5,
-  spaceBetween: 30,
+  spaceBetween: 15,
   freeMode: true,
 });
+
+swiper.slidesPerView = 5;
 // open & close burger menu
 let open = false;
 window.onclick = (e) => {

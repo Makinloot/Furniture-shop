@@ -120,9 +120,39 @@ header .flex {
   top: 0;
   width: 280px;
   min-height: 600px;
+  padding: 1rem;
   background-color: rgb(56, 55, 55);
+  border-radius: 10px 0 0 10px;
   z-index: 90;
   transition: 0.3s ease-in;
+}
+
+.burger-bar {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.burger-link {
+  position: relative;
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-medium);
+  color: var(--clr-white);
+  text-transform: capitalize;
+}
+
+.burger-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 0;
+  border: 0px solid;
+  transition: 0.3s;
+}
+
+.burger-link:hover:after {
+  width: 100%;
+  border: 1px solid;
 }
 
 /* hero section */
@@ -212,8 +242,8 @@ header .flex {
 }
 
 .new-items__text-wrapper {
-  /* align-self: flex-start; */
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .swiper {
@@ -223,5 +253,7 @@ header .flex {
 
 .swiper-slide {
   min-height: 200px;
-  width: 100%;
+  max-height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
 }
