@@ -1,0 +1,20 @@
+
+@font-face {
+    font-family: 'saira semi-bold';
+    src: url('../fonts/Saira-SemiBold.woff2') format('woff2'),
+        url('../fonts/Saira-SemiBold.woff') format('woff'),
+        url('../fonts/Saira-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'saira';
+    src: url('../fonts/Saira-Regular.woff2') format('woff2'),
+        url('../fonts/Saira-Regular.woff') format('woff'),
+        url('../fonts/Saira-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
