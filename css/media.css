@@ -1,53 +1,86 @@
 @media (min-width: 480px) {
-    .hero__text-wrapper p {
-        max-width: 600px;
-        margin: 30px auto 60px;
-    }
+  .hero__text-paragraph {
+    max-width: 600px;
+    margin: 30px auto 60px;
+  }
 }
 
 @media (min-width: 768px) {
-    /* header section */
-    .bg-main {
-        height: 850px;
-        border-radius: 0 0 1rem 1rem;
-    }
+  /* header section */
+  .bg-main {
+    height: 850px;
+    border-radius: 0 0 1rem 1rem;
+  }
 
-    header h1 {
-        font-size: 2.5rem;
-    }
+  .logo {
+    font-size: 2.5rem;
+  }
 
-    .burger-menu {
-        display: none;
-    }
+  .burger-menu {
+    display: none;
+  }
 
-    .navbar {
-        display: block;
-    }
+  .navbar {
+    display: block;
+  }
 
-    /* hero section */
-    .hero {
-        padding-top: 155px;
-    }
+  /* hero section */
+  .hero {
+    padding-top: 155px;
+  }
 
-    .hero__text-wrapper {
-        margin-bottom: 195px;
-    }
+  .hero__text-wrapper {
+    margin-bottom: 195px;
+  }
 
-    .hero__text-wrapper h2 {
-        max-width: 880px;
-        margin: 0 auto;
-        font-size: var(--fs-xl);
-        line-height: 76px;
-    }
+  .hero__text-heading {
+    max-width: 880px;
+    margin: 0 auto;
+    font-size: var(--fs-xl);
+    line-height: 76px;
+  }
 
-    .hero__text-wrapper p {
-        font-size: var(--fs-xmedium);
-        line-height: 30px;
-    }
+  .hero__text-paragraph {
+    font-size: var(--fs-xmedium);
+    line-height: 30px;
+  }
 
-    .hero .card.grid {
-        margin-top: -40px;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr;
-    }
+  .hero .card.grid {
+    margin-top: -40px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .services,
+  .new-items {
+    margin: 40px 0;
+  }
+
+  .services .grid {
+    grid-template-columns: 50% 50%;
+    gap: 50px;
+    max-width: 1120px;
+  }
+
+  .new-items .grid {
+    grid-template-columns: 20% 80%;
+    gap: 2rem;
+  }
+
+  .new-items .flex {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .new-items__text-wrapper {
+    align-self: flex-start;
+  }
+
+  .swiper-slide {
+    min-height: 400px;
+    width: 100%;
+  }
 }
