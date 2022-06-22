@@ -252,8 +252,25 @@ header .flex {
 }
 
 .swiper-slide {
+  position: relative;
   min-height: 200px;
   max-height: 200px;
   border-radius: 10px;
   object-fit: cover;
+}
+
+.swiper-slide::after {
+  content: 'Your Text Here';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  color: var(--clr-white);
+}
+
+.products__text-paragraph {
+  max-width: 540px;
+  margin: 1rem auto;
+  font-size: var(--fs-medium);
 }

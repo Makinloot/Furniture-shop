@@ -1,12 +1,18 @@
 // import and initialize swiper slider
 import "https://unpkg.com/swiper@8/swiper-bundle.min.js";
-const swiper = new Swiper(".mySwiper", {
-  slidesPerView: 2.5,
-  spaceBetween: 15,
-  freeMode: true,
-});
+window.onload = () => {
+  // control slider per view according to document width
+  const width = document.body.getBoundingClientRect();
+  let slidePerView = 2.5;
+  if(width.width < 480) slidePerView = 1.5;
+  // slider init
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: `${slidePerView}`,
+    spaceBetween: 15,
+    freeMode: true,
+  }); 
+}
 
-swiper.slidesPerView = 5;
 // open & close burger menu
 let open = false;
 window.onclick = (e) => {
