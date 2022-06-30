@@ -5,12 +5,16 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="business" />
+  <meta name="keywords" content="business, furniture, shop" />
+  <meta name="author" content="Tornike Epitashvili" />
+  <link rel="shortcut icon" href="./images/couch.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/fonts.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/utilities.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/media.css" />
-  <title>Document</title>
+  <title>FurniShop</title>
 </head>
 
 <body>
@@ -23,10 +27,10 @@
     <div class="container flex">
       <h1 class="logo">FurniShop</h1>
       <nav class="navbar">
-        <a class="navbar-link" href="#">home</a>
-        <a class="navbar-link" href="#">about</a>
-        <a class="navbar-link" href="#">features</a>
-        <a class="navbar-link" href="#">contact</a>
+        <a class="navbar-link" href="./index.html">home</a>
+        <a class="navbar-link" href='#feedback'>about</a>
+        <a class="navbar-link" href="#features">features</a>
+        <a class="navbar-link" href="#contact">contact</a>
       </nav>
       <img class="burger-menu" src="./images/menu.png" alt="menu icon" id="open-menu-btn" />
       <img class="close-menu" src="./images/close.png" alt="close icon" id="close-menu-btn" />
@@ -36,10 +40,10 @@
   <section class="hero">
     <div class="burger-content">
       <nav class="burger-bar flex">
-        <a href="#" class="burger-link">home</a>
-        <a href="#" class="burger-link">about</a>
-        <a href="#" class="burger-link">features</a>
-        <a href="#" class="burger-link">contact</a>
+        <a href="./index.html" class="burger-link">home</a>
+        <a href='#feedback' class="burger-link">about</a>
+        <a href="#features" class="burger-link">features</a>
+        <a href="#contact" class="burger-link">contact</a>
       </nav>
     </div>
     <div class="container center-text">
@@ -72,7 +76,7 @@
     </div>
   </section>
   <!-- SERVICES SECTION -->
-  <section class="services">
+  <section class="services" id="features">
     <div class="container grid">
       <div class="services__img-wrapper center-text">
         <img src="./images/services-img.png" alt="chair and table">
@@ -154,7 +158,7 @@
     </div>
   </section>
   <!-- FEEDBACK SECTION -->
-  <section class="feedback">
+  <section class="feedback" id="feedback">
     <div class="container grid">
       <div class="feedback__text-wrapper">
         <h2 class="feedback__text-heading heading-primary">what people are saying about us</h2>
@@ -205,7 +209,7 @@
     </div>
   </section>
   <!-- DISCOUNT SECTION -->
-  <section class="discount">
+  <section class="discount" id="contact">
     <div class="container flex">
       <div class="discount__text-wrapper">
         <h2 class="discount__heading heading-primary">get more discount off your order</h2>

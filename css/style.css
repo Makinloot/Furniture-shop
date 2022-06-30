@@ -27,6 +27,10 @@
   font-family: "saira", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2 {
   font-size: var(--fs-large);
@@ -123,9 +127,8 @@ header .flex {
   right: -280px;
   top: 0;
   width: 280px;
-  min-height: 600px;
-  padding: 1rem;
-  background-color: rgb(56, 55, 55);
+  padding: 3rem 1rem;
+  background-color: rgba(56, 55, 55, 0.904);
   border-radius: 10px 0 0 10px;
   z-index: 90;
   transition: 0.3s ease-in;
@@ -408,6 +411,7 @@ header .flex {
 
 .footer__social-icons a:hover {
   padding: 1rem 1.4rem;
+  background-color: #363942;
 }
 
 .footer__social-icons a:first-child {
