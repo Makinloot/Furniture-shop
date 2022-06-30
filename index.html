@@ -1,167 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/fonts.css" />
-    <link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-/>
-    <link rel="stylesheet" href="./css/utilities.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/media.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- MAIN BACKGROUND -->
-    <div class="bg-container">
-      <div class="bg-main"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/fonts.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/utilities.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/media.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- MAIN BACKGROUND -->
+  <div class="bg-container">
+    <div class="bg-main"></div>
+  </div>
+  <!-- HEADER SECTION -->
+  <header class="header">
+    <div class="container flex">
+      <h1 class="logo">FurniShop</h1>
+      <nav class="navbar">
+        <a class="navbar-link" href="#">home</a>
+        <a class="navbar-link" href="#">about</a>
+        <a class="navbar-link" href="#">features</a>
+        <a class="navbar-link" href="#">contact</a>
+      </nav>
+      <img class="burger-menu" src="./images/menu.png" alt="menu icon" id="open-menu-btn" />
+      <img class="close-menu" src="./images/close.png" alt="close icon" id="close-menu-btn" />
     </div>
-    <!-- HEADER SECTION -->
-    <header class="header">
-      <div class="container flex">
-        <h1 class="logo">FurniShop</h1>
-        <nav class="navbar">
-          <a class="navbar-link" href="#">home</a>
-          <a class="navbar-link" href="#">about</a>
-          <a class="navbar-link" href="#">features</a>
-          <a class="navbar-link" href="#">contact</a>
-        </nav>
-        <img
-          class="burger-menu"
-          src="./images/menu.png"
-          alt="menu icon"
-          id="open-menu-btn"
-        />
-        <img
-          class="close-menu"
-          src="./images/close.png"
-          alt="close icon"
-          id="close-menu-btn"
-        />
+  </header>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="burger-content">
+      <nav class="burger-bar flex">
+        <a href="#" class="burger-link">home</a>
+        <a href="#" class="burger-link">about</a>
+        <a href="#" class="burger-link">features</a>
+        <a href="#" class="burger-link">contact</a>
+      </nav>
+    </div>
+    <div class="container center-text">
+      <div class="hero__text-wrapper center-text">
+        <h2 class="hero__text-heading">creative home simpify your furniture</h2>
+        <p class="hero__text-paragraph">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Distinctio, aspernatur! Dolorum officia autem molestias mollitia!
+        </p>
+        <a href="#" class="hero__text-btn btn">shop now</a>
       </div>
-    </header>
-
-    <!-- HERO SECTION -->
-    <section class="hero">
-      <div class="burger-content">
-        <nav class="burger-bar flex">
-          <a href="#" class="burger-link">home</a>
-          <a href="#" class="burger-link">about</a>
-          <a href="#" class="burger-link">features</a>
-          <a href="#" class="burger-link">contact</a>
-        </nav>
-      </div>
-      <div class="container center-text">
-        <div class="hero__text-wrapper center-text">
-          <h2 class="hero__text-heading">creative home simpify your furniture</h2>
-          <p class="hero__text-paragraph">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Distinctio, aspernatur! Dolorum officia autem molestias mollitia!
-          </p>
-          <a href="#" class="hero__text-btn btn">shop now</a>
+      <div class="hero__card card grid">
+        <div class="hero__card-item">
+          <strong>7</strong>
+          <span>year experience</span>
         </div>
-        <div class="hero__card card grid">
-          <div class="hero__card-item">
-            <strong>7</strong>
-            <span>year experience</span>
-          </div>
-          <div class="hero__card-item">
-            <strong>2</strong>
-            <span>opened in the country</span>
-          </div>
-          <div class="hero__card-item">
-            <strong>10k+</strong>
-            <span>furniture sold</span>
-          </div>
-          <div class="hero__card-item">
-            <strong>260+</strong>
-            <span>variant furniture</span>
-          </div>
+        <div class="hero__card-item">
+          <strong>2</strong>
+          <span>opened in the country</span>
+        </div>
+        <div class="hero__card-item">
+          <strong>10k+</strong>
+          <span>furniture sold</span>
+        </div>
+        <div class="hero__card-item">
+          <strong>260+</strong>
+          <span>variant furniture</span>
         </div>
       </div>
-    </section>
-
-    <section class="services">
-        <div class="container grid">
-            <div class="services__img-wrapper center-text">
-                <img src="./images/services-img.png" alt="chair and table">
-            </div>
-            <div class="services__text-wrapper center">
-                <h2 class="services__text-heading heading-primary">We Create your home more aestetic</h2>
-                <p class="services__text-paragraph paragraph-primary">Furnitre power is a software as services for multiperpose business management system</p>
-                <div class="services__other">
-                    <div class="flex">
-                      <img src="./images/done-icon.png" alt="done">
-                      <h3 class="other__heading heading-secondary">valuation services</h3>
-                    </div>
-                    <p class="other__paragraph paragraph-secondary">Sometimes features require a short description.  This can be detailed description</p>
-                </div>
-                <div class="services__other">
-                    <div class="flex">
-                      <img src="./images/done-icon.png" alt="done">
-                      <h3 class="other__heading heading-secondary">Development of Furniture Models</h3>
-                    </div>
-                    <p class="other__paragraph paragraph-secondary">Sometimes features require a short description.  This can be detailed description</p>
-                </div>
-            </div>
+    </div>
+  </section>
+  <!-- SERVICES SECTION -->
+  <section class="services">
+    <div class="container grid">
+      <div class="services__img-wrapper center-text">
+        <img src="./images/services-img.png" alt="chair and table">
+      </div>
+      <div class="services__text-wrapper center">
+        <h2 class="services__text-heading heading-primary">We Create your home more aestetic</h2>
+        <p class="services__text-paragraph paragraph-primary">Furnitre power is a software as services for multiperpose
+          business management system</p>
+        <div class="services__other">
+          <div class="flex">
+            <img src="./images/done-icon.png" alt="done">
+            <h3 class="other__heading heading-secondary">valuation services</h3>
+          </div>
+          <p class="other__paragraph paragraph-secondary">Sometimes features require a short description. This can be
+            detailed description</p>
         </div>
-    </section>
-
-    <section class="new-items">
-      <div class="container grid">
-        <div class="new-items__text-wrapper flex">
-          <h2 class="new-items__text-heading heading-primary">new in store now</h2>
-          <p class="new-items__text-paragraph paragraph-secondary">Get the latest items immediately with promo prices</p>
-          <a href="#">Check All &#x2192</a>
+        <div class="services__other">
+          <div class="flex">
+            <img src="./images/done-icon.png" alt="done">
+            <h3 class="other__heading heading-secondary">Development of Furniture Models</h3>
+          </div>
+          <p class="other__paragraph paragraph-secondary">Sometimes features require a short description. This can be
+            detailed description</p>
         </div>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img class="swiper-slide" src="./images/slider-chair.png" alt="chair image">
-            </div>
-            <div class="swiper-slide"><img class="swiper-slide" src="./images/slider-bed.png" alt="bed image">
-            </div>
-            <div class="swiper-slide">
-              <img class="swiper-slide" src="./images/slider-cupboard.png" alt="cupboard image">
-            </div>
-            <div class="swiper-slide">
-              <img class="swiper-slide" src="./images/slider-chair.png" alt="chair image">
-            </div>
-            <div class="swiper-slide">
-              <img class="swiper-slide" src="./images/slider-bed.png" alt="bed image">
-            </div>
-            <div class="swiper-slide">
-              <img class="swiper-slide" src="./images/slider-cupboard.png" alt="cupboard image">
-            </div>
-            <div class="swiper-slide">
-              <img class="swiper-slide" src="./images/slider-chair.png" alt="chair image">
-            </div>
-            <div class="swiper-slide">
-              <img class="swiper-slide" src="./images/slider-bed.png" alt="bed image">
-            </div>
-            <div class="swiper-slide">
-              <img class="swiper-slide" src="./images/slider-cupboard.png" alt="cupboard image">
-            </div>
+      </div>
+    </div>
+  </section>
+  <!-- NEW ITEMS SECTION -->
+  <section class="new-items">
+    <div class="container grid">
+      <div class="new-items__text-wrapper flex">
+        <h2 class="new-items__text-heading heading-primary">new in store now</h2>
+        <p class="new-items__text-paragraph paragraph-secondary">Get the latest items immediately with promo prices</p>
+        <a href="#">Check All &#x2192</a>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="swiper-slide" src="./images/slider-chair.png" alt="chair image">
+          </div>
+          <div class="swiper-slide"><img class="swiper-slide" src="./images/slider-bed.png" alt="bed image">
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide" src="./images/slider-cupboard.png" alt="cupboard image">
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide" src="./images/slider-chair.png" alt="chair image">
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide" src="./images/slider-bed.png" alt="bed image">
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide" src="./images/slider-cupboard.png" alt="cupboard image">
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide" src="./images/slider-chair.png" alt="chair image">
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide" src="./images/slider-bed.png" alt="bed image">
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide" src="./images/slider-cupboard.png" alt="cupboard image">
+          </div>
           </img>
         </div>
       </div>
-    </section>
-
-    <section class="services">
-      <div class="container grid">
-          <div class="services__text-wrapper center">
-              <h2 class="services__text-heading heading-primary">The Best Furniture Manufacturer of your choice</h2>
-              <p class="services__text-paragraph paragraph-primary">Furnitre power is a software as services for multiperpose business management system, expecially for them who are running two or more business exploree the future Furnitre power is a software as services</p>
-          </div>
-          <div class="services__img-wrapper center-text">
-            <img src="./images/manufacturer-img.png" alt="kitchen image">
-        </div>
-      </div>
   </section>
-
+  <section class="services">
+    <div class="container grid">
+      <div class="services__text-wrapper center">
+        <h2 class="services__text-heading heading-primary">The Best Furniture Manufacturer of your choice</h2>
+        <p class="services__text-paragraph paragraph-primary">Furnitre power is a software as services for multiperpose
+          business management system, expecially for them who are running two or more business exploree the future
+          Furnitre power is a software as services</p>
+      </div>
+      <div class="services__img-wrapper center-text">
+        <img src="./images/manufacturer-img.png" alt="kitchen image">
+      </div>
+    </div>
+  </section>
+  <!-- FEEDBACK SECTION -->
   <section class="feedback">
     <div class="container grid">
       <div class="feedback__text-wrapper">
@@ -178,7 +170,8 @@
               </div>
             </div>
             <p class="slider-item__text paragraph-primary">
-              “They are have a perfect touch for make something so professional, interest and useful for a lot of people .”
+              “They are have a perfect touch for make something so professional, interest and useful for a lot of people
+              .”
             </p>
           </div>
           <div class="slider-item__image">
@@ -195,22 +188,23 @@
               </div>
             </div>
             <p class="slider-item__text paragraph-primary">
-              “They are have a perfect touch for make something so professional ,interest and useful for a lot of people .”
+              “They are have a perfect touch for make something so professional ,interest and useful for a lot of people
+              .”
             </p>
           </div>
           <div class="slider-item__image">
             <img src="./images/manufacturer-img.png" alt="slider img">
           </div>
         </div>
-        </div>
-        <div class="slider-item__buttons flex">
-          <button id="feedback-prev">&#x2190;</button>
-          <button id="feedback-next">&#x2192;</button>
-        </div>
+      </div>
+      <div class="slider-item__buttons flex">
+        <button id="feedback-prev">&#x2190;</button>
+        <button id="feedback-next">&#x2192;</button>
       </div>
     </div>
+    </div>
   </section>
-
+  <!-- DISCOUNT SECTION -->
   <section class="discount">
     <div class="container flex">
       <div class="discount__text-wrapper">
@@ -218,12 +212,67 @@
         <span>join our mailing list</span>
       </div>
       <form action="#" class="form flex">
-        <input type="email" name="email" id="email" placeholder="Your email address">
+        <input type="email" name="email" id="email" placeholder="Your email address" required>
         <input type="submit" value="Shop Now" class="btn">
       </form>
     </div>
   </section>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container flex">
+      <div>
+        <h1 class="logo">FurniShop</h1>
+        <div class="footer__social-icons flex">
+          <a class="btn" href="#" title="Follow us on instagram"><img src="./images/ig-icon.png" alt="instagram"></a>
+          <a class="btn" href="#" title="Follow us on facebook"><img src="./images/fb-icon.png" alt="facebook"></a>
+          <a class="btn" href="#" title="Follow us on twitter"><img src="./images/twitter-icon.png" alt="twitter"></a>
+          <a class="btn" href="#" title="Follow us on github"><img src="./images/github-icon.png" alt="github"></a>
+        </div>
+      </div>
+      <hr class="footer__hr">
+      <div class="footer__menus flex">
+        <nav class="flex footer__menu-products">
+          <h3 class="footer__menu-heading">our products</h3>
+          <a href="#" class="navbar-link">the support suite</a>
+          <a href="#" class="navbar-link">the sales suite</a>
+          <a href="#" class="navbar-link">support</a>
+          <a href="#" class="navbar-link">guide</a>
+        </nav>
+        <nav class="flex footer__menu-features">
+          <h3 class="footer__menu-heading">top features</h3>
+          <a href="#" class="navbar-link">ticketing system</a>
+          <a href="#" class="navbar-link">knowledge base</a>
+          <a href="#" class="navbar-link">community forums</a>
+          <a href="#" class="navbar-link">help desk software</a>
+        </nav>
+        <nav class="flex footer__menu-resources">
+          <h3 class="footer__menu-heading">resources</h3>
+          <a href="#" class="navbar-link">product support</a>
+          <a href="#" class="navbar-link">request demo</a>
+          <a href="#" class="navbar-link">library</a>
+          <a href="#" class="navbar-link">peoplepower blog</a>
+        </nav>
+        <nav class="flex footer__menu-company">
+          <h3 class="footer__menu-heading">company</h3>
+          <a href="#" class="navbar-link">about us</a>
+          <a href="#" class="navbar-link">press</a>
+          <a href="#" class="navbar-link">investors</a>
+          <a href="#" class="navbar-link">events</a>
+        </nav>
+        <nav class="flex footer__menu-favourite">
+          <h3 class="footer__menu-heading">favourite things</h3>
+          <a href="#" class="navbar-link">for enterprise</a>
+          <a href="#" class="navbar-link">for startups</a>
+          <a href="#" class="navbar-link">for benchmark</a>
+          <a href="#" class="navbar-link">for small business</a>
+        </nav>
+      </div>
+    </div>
+    <div class="rights center-text">
+      <span>© NameBrand 2022 - All Rights Reserved</span>
+    </div>
+  </footer>
 
-    <script type="module" src="./js/main.js"></script>
-  </body>
+  <script type="module" src="./js/main.js"></script>
+</body>
 </html>
